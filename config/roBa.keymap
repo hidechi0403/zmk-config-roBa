@@ -45,6 +45,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        num_comma: num_comma {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG2 &kp COMMA &kp LANG1>;
+            label = "NUM_COMMA";
+        };
     };
 
     behaviors {
@@ -66,7 +73,7 @@
 &mt LEFT_ALT Q      &kp W               &kp E       &kp R          &kp T                                  &kp Y      &kp U  &kp I      &lt 4 O  &mt RIGHT_ALT P
 &mt LEFT_CONTROL A  &mt LEFT_CONTROL S  &kp D       &kp F          &kp G        &kp LANG2      &kp LANG1  &kp H      &kp J  &kp K      &kp L    &mt RIGHT_CONTROL MINUS
 &mt LEFT_SHIFT Z    &mt LEFT_SHIFT X    &kp C       &kp V          &kp B        &trans         &trans     &kp N      &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&lt 6 ESCAPE        &kp LA(APOSTROPHE)  &kp DELETE  &kp BACKSPACE  &lt 3 SPACE  &lt 2 TAB      &mo 1      &kp ENTER                             &kp LEFT_WIN
+&lt 6 ESCAPE        &trans              &kp DELETE  &kp BACKSPACE  &lt 3 SPACE  &lt 2 TAB      &mo 1      &kp ENTER                             &kp LEFT_WIN
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -83,19 +90,19 @@
 
         NUM {
             bindings = <
-&trans                       &kp PAGE_UP         &kp UP_ARROW        &kp PAGE_DOWN        &trans                       &kp RS(COLON)    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH
-&kp HOME                     &kp LEFT_ARROW      &kp DOWN_ARROW      &kp RIGHT_ARROW      &kp END  &trans      &trans  &kp RS(EQUAL)    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS
-&mt LEFT_SHIFT LG(UP_ARROW)  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &trans   &trans      &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA
-&trans                       &trans              &trans              &trans               &trans   &trans      &trans  &trans                                                              &trans
+&trans                       &kp PAGE_UP         &kp UP_ARROW        &kp PAGE_DOWN        &trans                       &kp RS(DOUBLE_QUOTES)  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH
+&kp HOME                     &kp LEFT_ARROW      &kp DOWN_ARROW      &kp RIGHT_ARROW      &kp END  &trans      &trans  &kp RS(COLON)          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS
+&mt LEFT_SHIFT LG(UP_ARROW)  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &trans   &trans      &trans  &kp KP_NUMBER_0        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &num_comma
+&trans                       &trans              &trans              &trans               &trans   &trans      &trans  &trans                                                                    &trans
             >;
         };
 
         ARROW {
             bindings = <
-&kp LG(LC(D))         &kp LG(LC(LEFT))        &kp LS(UP_ARROW)        &kp LG(LC(RIGHT_ARROW))  &trans                           &kp RS(N7)   &kp RS(N2)        &kp RS(N8)         &kp RS(N9)             &kp HASH
-&kp LS(HOME)          &kp LS(LEFT_ARROW)      &kp LS(DOWN_ARROW)      &kp LS(RIGHT_ARROW)      &kp LS(END)  &trans      &trans  &kp RS(N6)   &kp EXCLAMATION   &kp RIGHT_BRACKET  &kp PIPE               &kp PLUS
-&kp LS(LC(UP_ARROW))  &kp LS(LC(LEFT_ARROW))  &kp LS(LC(DOWN_ARROW))  &kp LS(LC(RIGHT_ARROW))  &trans       &trans      &trans  &kp PERCENT  &kp LEFT_BRACKET  &kp SEMICOLON      &kp RS(DOUBLE_QUOTES)  &kp RS(INTERNATIONAL_1)
-&trans                &trans                  &trans                  &trans                   &trans       &trans      &trans  &trans                                                                   &trans
+&kp LG(LC(D))         &kp LG(LC(LEFT))        &kp LS(UP_ARROW)        &kp LG(LC(RIGHT_ARROW))  &trans                           &kp RS(N7)   &kp RS(N2)        &kp RS(N8)         &kp RS(N9)         &kp HASH
+&kp LS(HOME)          &kp LS(LEFT_ARROW)      &kp LS(DOWN_ARROW)      &kp LS(RIGHT_ARROW)      &kp LS(END)  &trans      &trans  &kp RS(N6)   &kp EXCLAMATION   &kp RIGHT_BRACKET  &kp PIPE           &kp PLUS
+&kp LS(LC(UP_ARROW))  &kp LS(LC(LEFT_ARROW))  &kp LS(LC(DOWN_ARROW))  &kp LS(LC(RIGHT_ARROW))  &trans       &trans      &trans  &kp PERCENT  &kp LEFT_BRACKET  &kp SEMICOLON      &kp DOUBLE_QUOTES  &kp RS(INTERNATIONAL_1)
+&trans                &trans                  &trans                  &trans                   &trans       &trans      &trans  &trans                                                               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;

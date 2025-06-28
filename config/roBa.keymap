@@ -75,7 +75,7 @@
         FUNCTION {
             bindings = <
 &kp F9  &kp F10  &kp F11  &kp F12  &trans                      &kp RS(N4)   &kp N7  &kp N8  &kp N9  &kp RC(SEMICOLON)
-&kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans      &trans  &kp INT_YEN  &kp N4  &kp N5  &kp N6  &kp RC(COLON)
+&kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans      &trans  &kp INT_YEN  &kp N4  &kp N5  &kp N6  &kp RC(ASTERISK)
 &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans      &trans  &kp N0       &kp N1  &kp N2  &kp N3  &kp RS(EQUAL)
 &trans  &trans   &trans   &trans   &trans  &trans      &trans  &trans                               &trans
             >;
@@ -92,10 +92,10 @@
 
         ARROW {
             bindings = <
-&kp LG(LC(D))         &kp LG(LC(LEFT))        &kp LS(UP_ARROW)        &kp LG(LC(RIGHT_ARROW))  &trans                           &kp RS(N1)   &kp RS(N2)        &kp RS(N8)         &kp RS(N9)    &kp HASH
-&kp LS(HOME)          &kp LS(LEFT_ARROW)      &kp LS(DOWN_ARROW)      &kp LS(RIGHT_ARROW)      &kp LS(END)  &trans      &trans  &kp RS(N6)   &kp EXCLAMATION   &kp RIGHT_BRACKET  &kp PIPE      &kp PLUS
-&kp LS(LC(UP_ARROW))  &kp LS(LC(LEFT_ARROW))  &kp LS(LC(DOWN_ARROW))  &kp LS(LC(RIGHT_ARROW))  &trans       &trans      &trans  &kp PERCENT  &kp LEFT_BRACKET  &kp SEMICOLON      &kp ASTERISK  &kp INTERNATIONAL_1
-&trans                &trans                  &trans                  &trans                   &trans       &trans      &trans  &trans                                                          &trans
+&kp LG(LC(D))         &kp LG(LC(LEFT))        &kp LS(UP_ARROW)        &kp LG(LC(RIGHT_ARROW))  &trans                           &kp RS(N7)   &kp RS(N2)        &kp RS(N8)         &kp RS(N9)         &kp HASH
+&kp LS(HOME)          &kp LS(LEFT_ARROW)      &kp LS(DOWN_ARROW)      &kp LS(RIGHT_ARROW)      &kp LS(END)  &trans      &trans  &kp RS(N6)   &kp EXCLAMATION   &kp RIGHT_BRACKET  &kp RS(PIPE)       &kp PLUS
+&kp LS(LC(UP_ARROW))  &kp LS(LC(LEFT_ARROW))  &kp LS(LC(DOWN_ARROW))  &kp LS(LC(RIGHT_ARROW))  &trans       &trans      &trans  &kp PERCENT  &kp LEFT_BRACKET  &kp SEMICOLON      &kp DOUBLE_QUOTES  &kp RS(INTERNATIONAL_1)
+&trans                &trans                  &trans                  &trans                   &trans       &trans      &trans  &trans                                                               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;

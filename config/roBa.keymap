@@ -70,10 +70,10 @@
 
         default_layer {
             bindings = <
-&mt LEFT_ALT Q      &kp W               &kp E       &kp R          &kp T                                            &kp Y      &kp U  &kp I      &lt 4 O  &mt RIGHT_ALT P
-&mt LEFT_CONTROL A  &mt LEFT_CONTROL S  &kp D       &kp F          &kp G        &trans              &trans          &kp H      &kp J  &kp K      &kp L    &mt RIGHT_CONTROL MINUS
-&mt LEFT_SHIFT Z    &mt LEFT_SHIFT X    &kp C       &kp V          &kp B        &kp LANGUAGE_2      &kp LANGUAGE_1  &kp N      &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&lt 6 ESCAPE        &trans              &kp DELETE  &kp BACKSPACE  &lt 3 SPACE  &lt 2 TAB           &mo 1           &kp ENTER                             &kp LEFT_WIN
+&mt LEFT_ALT Q      &kp W               &kp E       &kp R          &kp T                                       &kp Y      &kp U  &lt 5 I    &lt 4 O  &mt RIGHT_ALT P
+&mt LEFT_CONTROL A  &mt LEFT_CONTROL S  &kp D       &kp F          &kp G        &trans         &trans          &kp H      &kp J  &kp K      &kp L    &mt RIGHT_CONTROL MINUS
+&mt LEFT_SHIFT Z    &mt LEFT_SHIFT X    &kp C       &kp V          &kp B        &trans         &kp LANGUAGE_1  &kp N      &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&lt 6 ESCAPE        &kp LANGUAGE_2      &kp DELETE  &kp BACKSPACE  &lt 3 SPACE  &lt 2 TAB      &mo 1           &kp ENTER                             &kp LEFT_WIN
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -110,8 +110,8 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                        &trans    &trans    &mkp MB2  &trans  &mo 5
-&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &mkp MB1  &trans    &trans  &mo 5
+&trans  &trans  &trans  &trans  &trans                        &trans    &trans    &mkp MB2  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &mkp MB1  &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &trans    &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &mkp MB4  &mkp MB5                              &trans
             >;

@@ -12,29 +12,79 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
+        n1 {
+            bindings = <&kp N1>;
+            key-positions = <30 40>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+        n2 {
+            bindings = <&kp N2>;
+            key-positions = <40 31>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+        n3 {
+            bindings = <&kp N3>;
+            key-positions = <40 32>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+        n4 {
+            bindings = <&kp N4>;
+            key-positions = <40 18>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        n5 {
+            bindings = <&kp N5>;
+            key-positions = <24 25 40 19>;
+        };
+
+        n6 {
+            bindings = <&kp N6>;
+            key-positions = <40 20>;
+        };
+
+        n7 {
+            bindings = <&kp N7>;
+            key-positions = <40 6>;
+        };
+
+        n8 {
+            bindings = <&kp N8>;
+            key-positions = <7 40>;
+        };
+
+        n9 {
+            bindings = <&kp N9>;
+            key-positions = <8 40>;
+        };
+
+        n0 {
+            bindings = <&kp N0>;
+            key-positions = <29 40>;
+        };
+
+        equal {
+            bindings = <&kp RS(MINUS)>;
+            key-positions = <40 17>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <5 40>;
+        };
+
+        yen {
+            bindings = <&kp INTERNATIONAL_3>;
+            key-positions = <33 40>;
+        };
+
+        date {
+            bindings = <&kp RC(SEMI)>;
+            key-positions = <21 40>;
+        };
+
+        time {
+            bindings = <&kp RC(APOS)>;
+            key-positions = <9 40>;
         };
     };
 

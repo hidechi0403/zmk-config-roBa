@@ -83,8 +83,6 @@
 &mt LEFT_SHIFT Z    &kp X           &kp C           &mt LEFT_SHIFT V    &kp B        &trans         &trans           &kp N      &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &lt 6 ESCAPE        &kp LANGUAGE_2  &kp LANGUAGE_1  &kp DELETE          &lt 3 SPACE  &lt 2 TAB      &lt 1 BACKSPACE  &kp ENTER                             &kp LEFT_WIN
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         FUNCTION {
@@ -112,8 +110,6 @@
 &kp LS(LC(UP_ARROW))  &kp LS(LC(LEFT_ARROW))  &kp LS(LC(DOWN_ARROW))  &kp LS(LC(RIGHT_ARROW))  &trans       &trans      &trans  &kp RS(N4)  &kp LEFT_BRACKET  &kp SEMICOLON      &kp SINGLE_QUOTE  &kp RS(INTERNATIONAL_1)
 &trans                &trans                  &trans                  &trans                   &trans       &trans      &trans  &trans                                                             &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         MOUSE {
